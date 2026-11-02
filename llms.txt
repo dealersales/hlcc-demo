@@ -1,6 +1,6 @@
 # Holton Le Clay Cars
 
-> Holton Le Clay Cars is an independent used car dealer in Grimsby, North East Lincolnshire. We sell quality used cars, offer finance available subject to status, welcome part exchange, and include a minimum 3-month warranty with every car.
+> Holton Le Clay Cars is an independent used car dealer in Grimsby, North East Lincolnshire. We began as a service and MOT centre serving the city for over 20 years and have been selling used cars for just over five. We offer finance from 10.4% APR (representative 19.9% APR), welcome part exchange, and include a minimum 3-month warranty with every car.
 
 Based at Peacefield Business Park, Nickerson Way, Holton-le-Clay, Grimsby DN36 5HS, we offer finance (credit broker, not a lender), part exchange, a minimum 3-month warranty with extended 6 and 12 month options, and 3 years free servicing and MOT tests (subject to East Grimsby MOT and Repair Centre Limited).
 
@@ -8,7 +8,7 @@ Based at Peacefield Business Park, Nickerson Way, Holton-le-Clay, Grimsby DN36 5
 
 - [Home](https://www.holtonleclaycars.co.uk/): current stock overview, latest arrivals and highlights
 - [Stock](https://www.holtonleclaycars.co.uk/stock.php): filter used cars by make, model, body type, fuel, price and mileage
-- [Vehicle finance](https://www.holtonleclaycars.co.uk/finance.php): HP/PCP finance options from the representative APR, subject to status
+- [Vehicle finance](https://www.holtonleclaycars.co.uk/finance.php): HP/PCP finance from 10.4% APR, representative 19.9% APR, subject to status
 - [Sell your car](https://www.holtonleclaycars.co.uk/sell-your-car.php): sell or part-exchange your car
 - [Warranty](https://www.holtonleclaycars.co.uk/warranty.php): minimum 3-month warranty and extended cover options
 - [Reviews](https://www.holtonleclaycars.co.uk/reviews.php): verified customer reviews
