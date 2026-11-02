@@ -7,9 +7,9 @@
     <meta name="author" content="Holton Le Clay Cars">
     <meta name="theme-color" content="black">
     <title>Car Finance in Grimsby | Holton Le Clay Cars</title>
-    <script type="application/json" id="makes-models-json">{"Audi":["Q3"],"Land Rover":["Range Rover Sport"],"Mercedes-Benz":["GLE"],"Jaguar":["XK","X-Type"],"Volvo":["V40"],"Mazda":["Mazda6 Tourer"],"Kia":["Optima"],"Volkswagen":["Transporter T5"],"Mitsubishi":["L200"]}</script>
+    <script type="application/json" id="makes-models-json">{"Audi":["Q3"],"Land Rover":["Range Rover Sport"],"Mercedes-Benz":["ML350"],"Jaguar":["XK8"],"Volvo":["V40"],"Mazda":["Mazda6"],"Kia":["Optima"],"Mitsubishi":["L200"],"Volkswagen":["Transporter"],"Mini":["Countryman"]}</script>
 
-        <link rel="canonical" href="https://onlinewebst-ship-it.github.io/hlcc-demo/finance.html">
+        <link rel="canonical" href="https://dealersales.github.io/hlcc-demo/finance.html">
             <meta name="robots" content="noindex, nofollow">
         <!-- Favicons -->
     <link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
@@ -27,9 +27,9 @@
         <!-- Bootstrap CSS -->
     <link href="assets/vendor/bootstrap.min.css?v=1793377866" rel="stylesheet">
     <!-- Critical CSS -->
-    <link href="css/critical.css?v=1793612533" rel="stylesheet">
+    <link href="css/critical.css?v=1793613638" rel="stylesheet">
     <!-- Custom Styles -->
-    <link href="css/style.css?v=1793612533" rel="stylesheet">
+    <link href="css/style.css?v=1793613638" rel="stylesheet">
     <!-- Font Awesome (core + solid + brands only) -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" onload="this.rel='stylesheet'">
@@ -38,7 +38,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Car Finance in Grimsby | Holton Le Clay Cars | Holton Le Clay Cars">
     <meta property="og:description" content="Car finance in Grimsby with Holton Le Clay Cars. Hire Purchase and PCP options, subject to status. Enquire online or speak to the team.">
-    <meta property="og:url" content="https://onlinewebst-ship-it.github.io/hlcc-demo/finance.html">
+    <meta property="og:url" content="https://dealersales.github.io/hlcc-demo/finance.html">
     <meta property="og:site_name" content="Holton Le Clay Cars">
     <meta property="og:locale" content="en_GB">
     <meta property="og:image" content="http://127.0.0.1:8080/assets/logo.png">
@@ -60,9 +60,9 @@
                 "logo": "http://127.0.0.1:8080/assets/logo.png",
                 "telephone": "+447565711773",
                 "email": "sales@holtonleclaycars.co.uk",
-                "priceRange": "£0-£0",
-                "address": {"@type": "PostalAddress", "streetAddress": "Pinfold Lane, Holton-le-Clay", "addressLocality": "Grimsby", "addressRegion": "North East Lincolnshire", "postalCode": "DN36 5DH", "addressCountry": "GB"},
-                "geo": {"@type": "GeoCoordinates", "latitude": 53.5044, "longitude": -0.0586},
+                "priceRange": "£3,990-£33,990",
+                "address": {"@type": "PostalAddress", "streetAddress": "Peacefield Business Park, Nickerson Way, Holton-le-Clay", "addressLocality": "Grimsby", "addressRegion": "North East Lincolnshire", "postalCode": "DN36 5DH", "addressCountry": "GB"},
+                "geo": {"@type": "GeoCoordinates", "latitude": 53.501136, "longitude": -0.065867},
                 "hasMap": "https://www.google.com/maps/search/?api=1&query=Holton%20Le%20Clay%20Cars%20Grimsby%20DN36%205DH",
                 "openingHoursSpecification": [
                     {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
@@ -97,69 +97,7 @@
 <a class="skip-link" href="#page-main">Skip to main content</a>
 <div id="top"></div>
 
-<!-- Splash / intro loader -->
-<div class="loading" id="loadingLogo">
-    <div class="content-wrap">
-        <div class="splash-logo" id="splashLogo">
-            <img src="assets/logo.png" class="active" alt="Holton Le Clay Cars" width="400" height="120" data-frame="0">
-            <img src="assets/logo-anim-1.png" alt="" width="400" height="120" data-frame="1">
-            <img src="assets/logo-anim-2.png" alt="" width="400" height="120" data-frame="2">
-            <img src="assets/logo-anim-3.png" alt="" width="400" height="120" data-frame="3">
-            <img src="assets/logo-anim-4.png" alt="" width="400" height="120" data-frame="4">
-        </div>
-    </div>
-</div>
-<script>
-(function () {
-    var el = document.getElementById('loadingLogo');
-    if (!el) return;
-    var box = document.getElementById('splashLogo');
-    var imgs = box ? box.querySelectorAll('img') : [];
-    function ready(img) { return !!(img && img.complete && img.naturalWidth > 0); }
-    function show(i) {
-        // Never swap in a frame that has not decoded yet - it would flash blank.
-        if (!ready(imgs[i])) return;
-        for (var k = 0; k < imgs.length; k++) imgs[k].classList.toggle('active', k === i);
-    }
-    var seen = false;
-    try { seen = sessionStorage.getItem('hlccSplashShown') === '1'; } catch (e) {}
-    if (seen) { el.classList.add('loaded'); return; }
 
-    var started = false;
-    function finish() {
-        el.classList.add('loaded');
-        try { sessionStorage.setItem('hlccSplashShown', '1'); } catch (e) {}
-    }
-    function start() {
-        if (started) return;
-        started = true;
-        show(0);
-        var step = 0;
-        var timer = setInterval(function () {
-            step++;
-            if (step >= imgs.length) { clearInterval(timer); return; }
-            show(step);
-        }, 450);
-        setTimeout(finish, 2500);
-    }
-
-    // Only start once the logo has actually decoded, so a slow connection never
-    // burns the intro on an empty black screen.
-    var first = imgs[0];
-    if (ready(first)) {
-        start();
-    } else if (first) {
-        first.addEventListener('load', function () { if (ready(first)) start(); });
-        first.addEventListener('error', start);
-    } else {
-        start();
-    }
-    // Hard cap: never hold the page hostage waiting for a stalled download.
-    // Hide without marking the intro as seen, so the next load can replay it
-    // once the logo is cached.
-    setTimeout(function () { if (!started) el.classList.add('loaded'); }, 5000);
-})();
-</script>
 
 <script>
 /* Consent-gated analytics (GA4 / GTM). Only loads after the visitor consents. */
@@ -248,7 +186,7 @@
             <div class="d-flex gap-3 align-items-center">
                 <a href="tel:07565711773" class="fw-bold"><i class="fa-solid fa-fw fa-sm fa-phone text-white me-2"></i>07565 711773</a>
                 <a href="https://wa.me/447565711773" target="_blank" rel="noopener" class="fw-bold d-none d-sm-inline"><i class="fa-brands fa-fw fa-sm fa-whatsapp text-white me-2"></i>WhatsApp</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=Pinfold%20Lane%2C%20Holton-le-Clay%2C%20Grimsby%20DN36%205DH" target="_blank" rel="noopener" class="d-none d-md-inline fw-bold"><i class="fa-solid fa-fw fa-sm fa-location-dot text-white me-2"></i>Pinfold Lane, Holton-le-Clay, Grimsby DN36 5DH</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Peacefield%20Business%20Park%2C%20Nickerson%20Way%2C%20Holton-le-Clay%2C%20Grimsby%20DN36%205HS" target="_blank" rel="noopener" class="d-none d-md-inline fw-bold"><i class="fa-solid fa-fw fa-sm fa-location-dot text-white me-2"></i>Peacefield Business Park, Nickerson Way, Holton-le-Clay, Grimsby DN36 5HS</a>
                 <div class="ms-auto">
                     <div class="toggle-menu d-flex d-lg-none gap-1 align-items-center">
                         <a class="btn btn-black btn-icon" role="button" data-bs-toggle="offcanvas" href="#offcanvasSearch" aria-controls="offcanvasSearch" aria-expanded="false" aria-label="Search our stock"><i class="fa-solid fa-search" aria-hidden="true"></i></a>
@@ -283,6 +221,7 @@
                                         <option value="Land Rover">Land Rover</option>
                                         <option value="Mazda">Mazda</option>
                                         <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                        <option value="Mini">Mini</option>
                                         <option value="Mitsubishi">Mitsubishi</option>
                                         <option value="Volkswagen">Volkswagen</option>
                                         <option value="Volvo">Volvo</option>
@@ -294,11 +233,11 @@
             </div>
             <div class="col-6">
                 <label class="form-label lh-lg">Min Price</label>
-                <select class="form-select option-dropdown" name="min_price"><option value="">From £</option><option value="2000">£2,000</option><option value="3000">£3,000</option><option value="4000">£4,000</option><option value="5000">£5,000</option><option value="6000">£6,000</option><option value="7000">£7,000</option><option value="8000">£8,000</option><option value="9000">£9,000</option><option value="10000">£10,000</option><option value="12000">£12,000</option><option value="14000">£14,000</option><option value="16000">£16,000</option><option value="18000">£18,000</option><option value="20000">£20,000</option><option value="25000">£25,000</option><option value="30000">£30,000</option><option value="35000">£35,000</option><option value="40000">£40,000</option></select>
+                <select class="form-select option-dropdown" name="min_price"><option value="">From £</option><option value="3000">£3,000</option><option value="4000">£4,000</option><option value="5000">£5,000</option><option value="6000">£6,000</option><option value="7000">£7,000</option><option value="8000">£8,000</option><option value="9000">£9,000</option><option value="10000">£10,000</option><option value="12000">£12,000</option><option value="14000">£14,000</option><option value="16000">£16,000</option><option value="18000">£18,000</option><option value="20000">£20,000</option><option value="25000">£25,000</option><option value="30000">£30,000</option></select>
             </div>
             <div class="col-6">
                 <label class="form-label lh-lg">Max Price</label>
-                <select class="form-select option-dropdown" name="max_price"><option value="">Up to £</option><option value="2000">£2,000</option><option value="3000">£3,000</option><option value="4000">£4,000</option><option value="5000">£5,000</option><option value="6000">£6,000</option><option value="7000">£7,000</option><option value="8000">£8,000</option><option value="9000">£9,000</option><option value="10000">£10,000</option><option value="12000">£12,000</option><option value="14000">£14,000</option><option value="16000">£16,000</option><option value="18000">£18,000</option><option value="20000">£20,000</option><option value="25000">£25,000</option><option value="30000">£30,000</option><option value="35000">£35,000</option><option value="40000">£40,000</option></select>
+                <select class="form-select option-dropdown" name="max_price"><option value="">Up to £</option><option value="3000">£3,000</option><option value="4000">£4,000</option><option value="5000">£5,000</option><option value="6000">£6,000</option><option value="7000">£7,000</option><option value="8000">£8,000</option><option value="9000">£9,000</option><option value="10000">£10,000</option><option value="12000">£12,000</option><option value="14000">£14,000</option><option value="16000">£16,000</option><option value="18000">£18,000</option><option value="20000">£20,000</option><option value="25000">£25,000</option><option value="30000">£30,000</option></select>
             </div>
             <div class="col-12 sticky-bottom mt-3">
                 <button type="submit" class="btn btn-secondary w-100">Search <span class="total-count d-inline-block">11</span></button>
@@ -504,7 +443,7 @@
         <div class="row g-0">
             <div class="col-12 col-md-6">
                 <div class="map h-100 p-0">
-                    <iframe class="lazyload h-100 w-100" data-src="https://www.google.com/maps?q=Pinfold%20Lane%2C%20Holton-le-Clay%2C%20Grimsby%20DN36%205DH&z=15&output=embed" frameborder="0" allowfullscreen loading="lazy" title="View Holton Le Clay Cars on Google Maps"></iframe>
+                    <iframe class="lazyload h-100 w-100" data-src="https://www.google.com/maps?q=Peacefield%20Business%20Park%2C%20Nickerson%20Way%2C%20Holton-le-Clay%2C%20Grimsby%20DN36%205HS&z=15&output=embed" frameborder="0" allowfullscreen loading="lazy" title="View Holton Le Clay Cars on Google Maps"></iframe>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
@@ -517,9 +456,9 @@
                             <div class="h5">Contact Us</div>
                             <div class="d-flex flex-column flex-wrap gap-2">
                                 <div class="vstack gap-2">
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Pinfold%20Lane%2C%20Holton-le-Clay%2C%20Grimsby%20DN36%205DH" class="d-inline-flex contact-address" target="_blank" rel="noopener">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Peacefield%20Business%20Park%2C%20Nickerson%20Way%2C%20Holton-le-Clay%2C%20Grimsby%20DN36%205HS" class="d-inline-flex contact-address" target="_blank" rel="noopener">
                                         <i class="fa-solid fa-fw fa-location-dot flex-shrink-0 me-2 mt-1 text-secondary"></i>
-                                        <span>Pinfold Lane, Holton-le-Clay, Grimsby DN36 5DH</span>
+                                        <span>Peacefield Business Park, Nickerson Way, Holton-le-Clay, Grimsby DN36 5HS</span>
                                     </a>
                                     <a href="tel:07565711773"><i class="fa-solid fa-fw fa-phone text-secondary me-2"></i>07565 711773</a>
                                     <a href="mailto:sales@holtonleclaycars.co.uk"><i class="fa-solid fa-fw fa-envelope text-secondary me-2"></i>sales@holtonleclaycars.co.uk</a>
@@ -611,12 +550,6 @@
                     <h2 class="h5 mb-3 text-center">Manufacturers we have cars for sale in stock</h2>
                     <ul class="list-unstyled row row-cols-1 row-cols-md-3 g-2 mb-0">
                                                 <li class="col">
-                            <a class="d-flex align-items-center gap-2" href="stock.html?make=Jaguar">
-                                <span class="make-count">2</span>
-                                <span class="small make-name">Jaguars for Sale</span>
-                            </a>
-                        </li>
-                                                <li class="col">
                             <a class="d-flex align-items-center gap-2" href="stock.html?make=Land+Rover">
                                 <span class="make-count">2</span>
                                 <span class="small make-name">Land Rovers for Sale</span>
@@ -626,6 +559,12 @@
                             <a class="d-flex align-items-center gap-2" href="stock.html?make=Audi">
                                 <span class="make-count">1</span>
                                 <span class="small make-name">Audi for Sale</span>
+                            </a>
+                        </li>
+                                                <li class="col">
+                            <a class="d-flex align-items-center gap-2" href="stock.html?make=Jaguar">
+                                <span class="make-count">1</span>
+                                <span class="small make-name">Jaguar for Sale</span>
                             </a>
                         </li>
                                                 <li class="col">
@@ -644,6 +583,12 @@
                             <a class="d-flex align-items-center gap-2" href="stock.html?make=Mercedes-Benz">
                                 <span class="make-count">1</span>
                                 <span class="small make-name">Mercedes-Benz for Sale</span>
+                            </a>
+                        </li>
+                                                <li class="col">
+                            <a class="d-flex align-items-center gap-2" href="stock.html?make=Mini">
+                                <span class="make-count">1</span>
+                                <span class="small make-name">MINI for Sale</span>
                             </a>
                         </li>
                                                 <li class="col">
@@ -741,7 +686,7 @@
 <script src="assets/vendor/bootstrap.bundle.min.js?v=1793377866"></script>
 <script src="assets/vendor/lazyload.min.js?v=1793377866"></script>
 
-<script src="js/site.js?v=1793612530"></script>
+<script src="js/site.js?v=1793613635"></script>
 
 <div style="position:fixed;right:14px;bottom:14px;z-index:99999;background:#14161a;color:#fff;font:500 12px/1.4 -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;padding:8px 12px;border-radius:6px;box-shadow:0 6px 24px rgba(0,0,0,.35);opacity:.92">Demo preview &middot; Digital Sales Consultants</div>
 </body>
