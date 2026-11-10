@@ -42,3 +42,16 @@ header[id^=header] .logo img{display:block;height:44px;width:auto}
 
 /* demo build: no analytics, so no consent UI */
 #cookie-consent-banner{display:none!important}
+
+
+/* --- HLCC layout corrections requested 16 Oct 2026 --- */
+/* FAQ: the open item is solid HLCC navy with white text */
+.accordion-button:not(.collapsed){background-color:#28406c !important;color:#fff !important;}
+.accordion-button:not(.collapsed):after{color:#fff !important;background-image:none !important;}
+.accordion-button:not(.collapsed) .accordion-icon:before,
+.accordion-button:not(.collapsed) .accordion-icon:after{background:#fff !important;}
+/* social icons need air between them */
+.social{display:inline-flex;flex-wrap:wrap;gap:.6rem;}
+/* the servicing band needs room at the sides */
+.band-servicing .container{max-width:1180px;}
+@media (min-width:992px){.band-servicing .container{padding-left:3rem;padding-right:3rem;}}
